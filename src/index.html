@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script type="text/javascript">
+		let ws = new WebSocket("http://127.0.0.1:8787/ws");
+		let kat;
+		let inc;
+		let dec;
+
+		// ws.onopen = (e) => {
+		// 	d = document.getElementById("asdf")
+		// 	d.innerText = "waiting for message"
+		// }
+		// ws.onmessage = (e) => {
+		// 	d.innerText = JSON.stringify(e)
+		// }
+
+		ws.onopen = (e) => {
+			kat = document.getElementById("kat");
+			kat.innerText = "waiting for messages";
+
+			ws.send(JSON.stringify({event: "get"}));
+
+			inc = document.getElementById("inc");
+			dec = document.getElementById("dec");
+
+			inc.onclick = (e) => {
+				ws.send(JSON.stringify({event: "inc"}));
+			};
+			dec.onclick = (e) => {
+				ws.send(JSON.stringify({event: "dec"}));
+			}
+		};
+		ws.onmessage = (e) => {
+			console.log(e);
+
+			kat.innerText = e.data;
+		}
+	</script>
+</head>
+<body>
+<div id="kat">
+	waiting to connect to ws...
+</div>
+<button id="inc">inc</button>
+<button id="dec">dec</button>
+</body>
+</html>
