@@ -62,8 +62,8 @@ class_name = "MyDurableObject"
 # Durable Object migrations.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#migrations
 [[migrations]]
-tag = "v1"
-new_classes = ["MyDurableObject"]
+tag = "v1" # Should be unique for each entry
+new_classes = ["MyDurableObject"] # Array of new classes
 
 # Bind a Hyperdrive configuration. Use to accelerate access to your existing databases from Cloudflare Workers.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#hyperdrive
