@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75058dac-1581-43ab-bf4e-3b4024a3cd2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/wrangler.toml" beforeDir="false" afterPath="$PROJECT_DIR$/wrangler.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="web-socket" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,7 +45,26 @@
     &quot;ts.external.directory.path&quot;: &quot;D:\\Sync\\Projects\\workers-chat-demo\\node_modules\\typescript\\lib&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.counter | decrement counter">
+    <configuration name="counter | decrement counter" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/counter.http" executionIdentifier="decrement counter" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="counter | get counter" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/counter.http" executionIdentifier="get counter" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="counter | increment counter" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/counter.http" executionIdentifier="increment counter" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="cf-typegen" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cf-typegen" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -54,6 +78,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.cf-typegen" />
+        <item itemvalue="HTTP Request.counter | increment counter" />
+        <item itemvalue="HTTP Request.counter | get counter" />
+        <item itemvalue="HTTP Request.counter | decrement counter" />
       </list>
     </recent_temporary>
   </component>
